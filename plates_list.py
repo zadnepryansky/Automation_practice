@@ -143,7 +143,6 @@ plates_list = [
     'AI6783OP', 'HH0151SV', 'AI5535VY', 'AI3313ON', 'AI5701WH', 'CA5050SB', 'HH9269VV', 'AI0045RJ', 'HH8609RB'
 ]
 
-
 your_code = input('Enter licence plates: ')
 print(f'Unique licence plates in plates list: {len(set(plates_list))} ')  # show unique licence plates
 if your_code.upper() in plates_list:  # find license plates

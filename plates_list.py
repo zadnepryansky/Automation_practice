@@ -144,15 +144,16 @@ plates_list = [
 ]
 
 
-license_plates = input('Enter your license plate: ')
-if license_plates.upper() in plates_list:  # find license plates
-    print('Number of unique license plates:', len(set(plates_list)))  # show all unique license plates
-    print('Yes, this license plate:', license_plates.upper(), ', is on the list')  # show license plate
-    sum_of_numbers = 0
-    for i in license_plates:
-        if i.isdigit():
-            sum_of_numbers += int(i)
-    print('The sum of all number is:', sum_of_numbers)  # show sum of numbers
-
+your_code = input('Enter licence plates: ')
+print(f'Unique licence plates in plates list: {len(set(plates_list))} ')  # show unique licence plates
+if your_code.upper() in plates_list:  # find license plates
+    print(f'Founded licence plate - is on the list')
 else:
-    print('License plates not found')
+    print(f'Founded licence plate is not on the list')
+sum_of_numbers = 0
+for i in your_code:
+    if i.isdigit():
+        sum_of_numbers += int(i)
+print('The sum of numbers is:', sum_of_numbers)  # show sum of numbers
+
+

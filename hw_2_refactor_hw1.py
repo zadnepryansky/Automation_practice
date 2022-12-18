@@ -1,4 +1,4 @@
-from hw_plates_list import plates_list
+from hw_1 import plates_list
 
 your_code = input('Enter licence plates: ')
 needed_code = your_code.upper()
@@ -12,12 +12,12 @@ def info_about_plates():
         print(f'Founded licence plate is not on the list')
 
 
-def parsing_data(input_data=needed_code):
+def parsing_data(data=needed_code) -> list or bool:
     counter = 0
-    for _ in input_data.upper():
+    for _ in data.upper():
         counter += 1
     if counter == 8:
-        numbers = list(filter(input_data.isdigit, needed_code))
+        numbers = list(filter(str.isdigit, needed_code))
 
         new_data = []
         new_data.extend([needed_code[0:2], needed_code[6:8]])

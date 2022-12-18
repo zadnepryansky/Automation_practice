@@ -12,12 +12,12 @@ def info_about_plates():
         print(f'Founded licence plate is not on the list')
 
 
-def parsing_data(data=needed_code):
+def parsing_data(input_data=needed_code):
     counter = 0
-    for _ in data.upper():
+    for _ in input_data.upper():
         counter += 1
     if counter == 8:
-        numbers = list(filter(str.isdigit, needed_code))
+        numbers = list(filter(input_data.isdigit, needed_code))
 
         new_data = []
         new_data.extend([needed_code[0:2], needed_code[6:8]])

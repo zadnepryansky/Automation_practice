@@ -7,9 +7,9 @@ needed_code = your_code.upper()
 def info_about_plates():
     print(f'Unique licence plates in plates list: {len(set(plates_list))} ')
     if needed_code in plates_list:  # find license plates
-        print(f'Founded licence plate - is on the list')
+        print(f'Founded license plate - is on the list')
     else:
-        print(f'Founded licence plate is not on the list')
+        print(f'The license plate is not on the list')
 
 
 def parsing_data(data=needed_code) -> list or bool:

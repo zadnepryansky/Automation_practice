@@ -29,7 +29,7 @@ def parsing_data(data=needed_code) -> list or bool:
         return False
 
 
-def sum_of_number() -> int:
+def sum_of_number(data=needed_code) -> int:
     sum_of_numbers = 0
     for i in needed_code:
         if i.isdigit():

@@ -1,7 +1,9 @@
 import requests
 
+# Tests using Class
 
-def save_data(data):
+
+def save_data_1(data):
     with open('log.txt', 'a') as f:
         f.write(data)
 
@@ -16,15 +18,15 @@ class TestSuite:
         print('Tests suite started')
 
     def teardown_class(self):
-        save_data(str(self.variable))
+        save_data_1(str(self.variable))
         print('Tests suite done')
 
     def setup(self):
-        save_data('started \n')
+        save_data_1('started \n')
         print('single test started')
 
     def teardown(self):
-        save_data('finished \n')
+        save_data_1('finished \n')
         print("single test finished")
 
     def test_first_check(self):

@@ -1,4 +1,5 @@
 # import pytest
+# tests using pure python
 from func_test import our_func
 
 

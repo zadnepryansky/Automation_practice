@@ -4,7 +4,7 @@ import requests
 
 
 def save_data_1(data):
-    with open('log.txt', 'a') as f:
+    with open('from_class_example.txt', 'a') as f:
         f.write(data)
 
 

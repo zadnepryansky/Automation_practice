@@ -11,7 +11,7 @@ def save_data_1(data):
 class TestSuite:
 
     def setup_class(self):
-        # something before all tests
+        # something before all tests_hw
         # from ... import ...
         # local_variable =
         self.variable = []

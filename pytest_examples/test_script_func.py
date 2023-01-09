@@ -1,5 +1,5 @@
 # import pytest
-# tests using pure python
+# tests_hw using pure python
 from func_test import our_func
 
 

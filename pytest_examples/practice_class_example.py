@@ -19,7 +19,7 @@ class TestSuite_1:
         print('Tests suite started')
 
     def teardown_class(self):
-        with open('data.log.txt', 'w+') as f:
+        with open('test_data.log.txt', 'w+') as f:
             f.write(f'{self.data}')
         print('Tests suite done')
 

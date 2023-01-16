@@ -1,4 +1,3 @@
-
 class Config:
     url = "https://wikipedia.org"
     ext = "wiki"
@@ -12,7 +11,3 @@ class Wikipedia:
 
     def __init__(self, url):
         self.url = f'{url}'
-
-
-
-

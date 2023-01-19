@@ -9,6 +9,7 @@ from selenium import webdriver
 def test_publish():
     pass
 
+
 @given("Our driver")
 def step_impl(request):
     driver = webdriver.Chrome()
@@ -26,6 +27,7 @@ def step_impl(request):
 def step_impl(request):
     request.driver.close()
     print("done")
+
 
 @given(parsers.re("Customized URL '(?P<name_0>.*)'"))
 def first_user(request, name_0):

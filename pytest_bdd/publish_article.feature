@@ -1,12 +1,19 @@
+
+
 Feature: Blog
-    A site where you can publish your articles.
+  A site where you can .
 
-    Scenario: Publishing the article
-        Given I'm an author user
-        And I have an article
+  Scenario Outline: Go to the page
+    Given Our driver
+    And Customized URL '<url>'
 
-        When I go to the article page
-        And I press the publish button
+    When I navigate to the page
 
-        Then I should not see the error message
-        And the article should be published  # Note: will query the database
+    Then Werify the page content
+
+    Examples:
+      | url                   |
+      | https://wikipedia.org |
+      | https://aqa.science   |
+      | https://google.com    |
+      | https://adv.wiki      |

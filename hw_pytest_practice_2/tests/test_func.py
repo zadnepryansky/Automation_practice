@@ -1,4 +1,4 @@
-from pytest_practice_2.func import add
+from hw_pytest_practice_2.func import add
 import pytest
 
 error = []

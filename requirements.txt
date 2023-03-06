@@ -33,6 +33,6 @@ urllib3==1.26.13
 webdriver-manager==3.8.5
 wrapt==1.14.1
 wsproto==1.2.0
-
+allure-behave
 pytest-bdd~=6.1.1
 assertpy~=1.1

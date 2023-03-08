@@ -36,3 +36,4 @@ wsproto==1.2.0
 allure-behave
 pytest-bdd~=6.1.1
 assertpy~=1.1
+allure-pytest~=2.13.0

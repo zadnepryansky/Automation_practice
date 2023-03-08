@@ -42,5 +42,12 @@ def test_four():
     assert stat_code == 201, errors.append(stat_code)
 
 
+performance_error = []
+
+
+def test_performance():
+    response = requests.get(url_1)
+    assert response.elapsed.total_seconds() < 1, \
+        performance_error.append(f' Time is {response.elapsed.total_seconds()}')
 
 
